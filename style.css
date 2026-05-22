@@ -1,0 +1,115 @@
+body {
+  background: linear-gradient(to right, #000000, #1e1e1e, #00ff88);
+  color: white;
+  font-family: Arial;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  color: ghostwhite;
+  font-size: 40px;
+}
+
+p {
+  font-size: 18px;
+}
+
+button {
+  background-color: #00ff88;
+  border: none;
+  padding: 15px 30px;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+img {
+  border-radius: 20px;
+  margin: 20px;
+}
+nav {
+  position: absolute;
+  top: 20px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+  font-size: 20px;
+}
+
+a:hover {
+  color: #00ff88;
+}
+h2 {
+  color: #00ff88;
+  margin-top: 20px;
+}
+button:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+h1 {
+  animation: subir 2s infinite alternate;
+}
+
+@keyframes subir {
+  from {
+    transform: translateY(0px);
+  }
+
+  to {
+    transform: translateY(-10px);
+  }
+}
+footer {
+  position: absolute;
+  bottom: 10px;
+  font-size: 14px;
+  color: #cccccc;
+}
+@media (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+    text-align: center;
+  }
+
+  p {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  img {
+    width: 220px;
+  }
+
+  nav a {
+    font-size: 16px;
+    margin: 8px;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px 20px;
+  }
+}
+input,
+textarea {
+  width: 100px;
+  padding: 12px;
+  margin: 10px;
+  border: none;
+  border-radius: 10px;
+}
+
+textarea {
+  height: 100px;
+}
